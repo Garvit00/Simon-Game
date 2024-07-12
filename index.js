@@ -3,8 +3,8 @@ var gamepattern = [];
 var userclickedpattern = [];
 var level = 0;
 var started = false;
-$(document).keypress(function(){
-    if(level==0){
+$(document).on('keypress touchstart', function(){
+    if(level == 0){
         nextSequence();
     }
 });
